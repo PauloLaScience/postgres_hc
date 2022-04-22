@@ -151,7 +151,7 @@ def loadArgs():
     parser = argparse.ArgumentParser(description='Automated health check on a postgresql database. Requires psycopg2: \'pip install psycopg2-binary\'')
     parser.add_argument('-P', '--pdf', dest='outputpdf', action='store_true', default='false', help='Converts the html output to a pdf file. Requires wkhtmltopdf installed and python module pdfkit: \'sudo apt install wkhtmltopdf && pip install pdfkit\'')
     parser.add_argument('-o', '--openbrowser', dest='openbrowser', action='store_true', default='false', help='Opens the browser to view the report after done running the script.')
-    parser.add_argument('-h', '--host', dest='ip', action='store', default="localhost", help='Host IP adres to connect. Default is localhost')
+    parser.add_argument('-ip', '--host', dest='ip', action='store', default="localhost", help='Host IP adres to connect. Default is localhost')
     parser.add_argument('-p', '--port', dest='port', action='store', default="5432", help='Port of the Postgres database. Default is 5432')
     parser.add_argument('-d', '--dbname', dest='db', action='store', default="postgres", help='Name of the database. Default is postgres')
     parser.add_argument('-U', '--username', dest='dbusr', action='store', default="postgres", help='Postgres Username. Superuser recommended. Default is postgres')

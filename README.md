@@ -32,12 +32,12 @@ sudo apt install wkhtmltopdf && pip install pdfkit
 ### Example use:
 
 ```bash
-python doctor.py -ip 192.168.56.1 -p 5432 -d dbname -u username -w "password" -o
+python doctor.py -ip 192.168.56.1 -p 5432 -d dbname -U username -W "password" -o
 ```
 
 To generate pdf version:
 ```bash
-python doctor.py -P -o -ip 192.168.56.1 -p 5432 -d dbname -u username -w "password"
+python doctor.py -P -o -ip 192.168.56.1 -p 5432 -d dbname -U username -W "password"
 ```
 
 List of options and commands:
