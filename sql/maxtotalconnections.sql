@@ -1,0 +1,1 @@
+select setting from pg_settings where name = 'max_connections'

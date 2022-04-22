@@ -1,0 +1,2 @@
+--Relevant autovacuum settings
+select relname, to_char(last_vacuum,'dd/mm/yyyy') as last_vacuum,to_char(last_autovacuum,'dd/mm/yyyy')  as last_autovacuum,to_char(last_analyze,'dd/mm/yyyy')  as last_analyze,to_char(last_autoanalyze,'dd/mm/yyyy') as last_autoanalyze from pg_stat_user_tables order by n_tup_del desc limit 10

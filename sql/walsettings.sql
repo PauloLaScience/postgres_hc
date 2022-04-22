@@ -1,0 +1,2 @@
+--Wal settings
+select name , setting from pg_settings where name in ('max_wal_size','wal_buffers','wal_compression','wal_level','synchronous_commit' , 'checkpoint_timeout','checkpoint_flush_after','archive_mode','archive_command' )

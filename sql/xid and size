@@ -1,0 +1,3 @@
+select datname,pg_size_pretty(pg_database_size(datname)::bigint),age(datfrozenxid)
+FROM pg_database
+where datname='';
