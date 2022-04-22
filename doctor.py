@@ -12,6 +12,8 @@ def main():
     conn = loadConn(args)
     html = createHtmlBody(args)
     html = addHeadersAndStyle(html)
+    if not os.path.exists('output'):
+        os.makedirs('output')
     filename = os.path.join("output","hc_"+ args.ip + "_" +args.db + "_" + datetime.datetime.now().strftime("%Y%m%d_%H:%M:%S"))
     writeFile(html,filename)
     if args.openbrowser == True:
