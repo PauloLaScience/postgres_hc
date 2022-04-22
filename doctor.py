@@ -61,7 +61,7 @@ def createHtmlBody(args): #To add table: create sql file in doctor/sql/ --> html
     html += htmltable("List of 10 largest tables","listtables.sql")
     html += "</div>" #div end of page (line break)
     print( "Attempting to query pg_stat_statements table...")
-    tmp += "<div class='pages'><h2>Query Performance</h2>"
+    tmp = "<div class='pages'><h2>Query Performance</h2>"
     tmp += htmltable('Query performance','pg_stat_statements_query_performance.sql')
     tmp += htmltable('report 1','pg_stat_statements_report_s1.sql')
     tmp += htmltable('Top total','pg_stat_statements_top_total_s1.sql')
