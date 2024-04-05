@@ -1,4 +1,4 @@
-# Postgres_Doctor
+# postgres_hc
 Executes a collection of SQL queries and compiles the results in a nicely formatted html page.
 Perfect to use for monthly health checks, or to investigate a new postgres database. 
 
