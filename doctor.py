@@ -100,7 +100,7 @@ def createHtmlBody(args): #To add table: create sql file in doctor/sql/ --> html
     html += htmltable("Tables and Columns Without Stats (so bloat cannot be estimated)","b5_tables_no_stats.sql")
     html += htmltable("Foreign Keys with Missing/Bad Indexes","foreignkeys.sql")
     html += "</div>" #div end of page (line break)
-    html += "src: <p>https://github.com/openPablo/postgres_doctor</p>"
+    html += "src: <p>https://github.com/PauloLaScience/postgres_hc</p>"
     return html
 
 def htmltable(title, string):
@@ -145,7 +145,7 @@ def addHeadersAndStyle(htmltoadd):
     logo= "https://i.imgur.com/Pnlx3Aa.png"
     html = """<html><header><title>Report</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro" rel="stylesheet"></header><body><div class="container">
-    <div class='pages'><div id='logowrapper'> <h1> openPablo / postgres_doctor</h1></div>"""
+    <div class='pages'><div id='logowrapper'> <h1> PauloLaScience / postgres_hc</h1></div>"""
     html +=  htmltoadd
     csspath= os.path.join("css", "style.css")
     html +="</div><style>" + open(csspath,"r").read() + "</style></body></html>"
