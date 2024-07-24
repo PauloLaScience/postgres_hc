@@ -28,21 +28,17 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #FFB016;
+  background-color: #00008B;
   color: white;
 }
 
-.logo {
-  width: 500px;
-  font-family: 'Cabin', sans-serif;
-  height: auto;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-#logowrapper{
-  text-align: center;
-}
-
 h2{
-  text-align: center;
+  text-align: left;
 }
 h1, h2, h3{
   font-family: 'Cabin', sans-serif;
